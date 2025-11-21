@@ -1,0 +1,21 @@
+{
+  "changeLogs": [{
+    "field": "attachment",
+    "mustDeleteAttachment": false,
+    "optAttachmentInfo": {
+      "name": "MarketingTechnologyChaosmapJapan2018_ver.1.0.pdf",
+      "optId": 4030165
+    },
+    "optNewValue": "MarketingTechnologyChaosmapJapan2018_ver.1.0.pdf"
+  }],
+  "eventType": "comment",
+  "notifications": [],
+  "optCreated": "2018-11-20T11:57:09+09:00",
+  "optCreatedUser": {
+    "name": "PSC北添",
+    "optMailAddress": "m-kitazoe@psc-inc.co.jp",
+    "optUserId": "m-kitazoe",
+    "roleType": 2
+  },
+  "optIssueId": 7658199
+}

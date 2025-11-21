@@ -1,0 +1,31 @@
+{
+  "attachments": [{
+    "name": ".htaccess",
+    "optId": 79289
+  }, {
+    "name": ".htpasswd",
+    "optId": 79290
+  }, {
+    "name": "バーチャルホスト設定.txt",
+    "optId": 79291
+  }],
+  "name": "テストサーバ設定手順",
+  "optContent": "* さくら会員サイト　ドメインメニューにてサブドメイン登録\r\n**会員サイトにログイン\r\nhttps://secure.sakura.ad.jp/menu/top/\r\n\\\\sv-fs01\\第四事業本部\\テストサーバ（さくらVPS）\r\n接続情報.txt\r\n\r\n**「ゾーン編集」をクリック。\r\n\r\n**「変更ボタン」をクリック。\r\n\r\n**ゾーン編集画面で、下記を入力し「新規登録」ボタンをクリック。\r\nエントリ名：設定したいサブドメイン\r\n種別： IPアドレス (A)\r\n値：160.16.141.218\r\n※他はデフォルト値で\r\n\r\n**「データ送信ボタン」をクリック\r\n\r\n* サーバに接続してバーチャルホスト設定\r\n※　USERNAME　が　サブドメイン。\r\nrootで作業する\r\n**ユーザ作成\r\n# useradd USERNAME\r\n\r\n※PWは7桁が必要\r\n# passwd USERNAME\r\nChanging password for user USERNAME.\r\nNew password: 50fe14x\r\nRetype new password: 50fe14x\r\npasswd: all authentication tokens updated successfully.\r\n\r\n**ホームディレクトリの設定\r\n作成したユーザで作業\r\nsu - USERNAME\r\n\r\npublic_htmlディレクトリを作成して、自分以外が編集できないよう(chmod)\r\napacheが読み込めるようにホームディレクトリとコンテンツディレクトリに実行許可\r\nmkdir /home/USERNAME/public_html\r\nchmod 701 /home/USERNAME/public_html\r\nchmod +x /home/USERNAME\r\n\r\nユーザディレクトリにテスト用index.htmlファイルを生成\r\ncd public_html\r\nvi /home/USERNAME/public_html/index.html\r\n文言を入れてEscボタン押下\r\n:wqで保存\r\n\r\n作業完了\r\nexit\r\n\r\n**ホームディレクトリを使用できるようuserdir.confファイルを編集\r\nvi /etc/httpd/conf.d/userdir.conf\r\n\r\n #UserDir disabled       ←コメントアウト\r\n  UserDir enabled USERNAME  ←追記\r\n\r\nEscボタン\r\n:wqで保存\r\n\r\n**バーチャルホスト設定\r\nvi /etc/httpd/conf.d/virtual.conf\r\n追加の場合、適宜変更して追記\r\n\r\n<VirtualHost *:80>\r\n        DocumentRoot    /home/USERNAME/public_html\r\n        ServerAdmin     USERNAME@USERNAME.psc-inc.jp\r\n        ServerName      USERNAME.psc-inc.jp\r\n        ErrorLog        /var/log/httpd/USERNAME-error_log\r\n        CustomLog       /var/log/httpd/USERNAME-access_log common\r\n</VirtualHost>\r\n\r\n**apache再起動\r\nsystemctl reload httpd\r\n\r\n**作成したユーザディレクトリに対してrootユーザーで下記のコマンドを実行\r\nrestorecon -R /home/USERNAME/public_html\r\n\r\n* Basic認証の設定\r\n/home/USERNAME/\r\nに　.htpasswd をアップ\r\n\r\n/home/USERNAME/public_html/\r\nに　.htaccess をアップ\r\n\r\n※USERNAME　と　パスワードは変更（初期：review）\r\n\r\n*テストサーバ一覧　に追記\r\n[[テストサーバ一覧]]",
+  "optCreated": "2018-01-12T14:05:46+09:00",
+  "optCreatedUser": {
+    "name": "PSC関塚",
+    "optMailAddress": "k-sekiduka@psc-inc.co.jp",
+    "optUserId": "k-sekiduka",
+    "roleType": 2
+  },
+  "optId": 252915,
+  "optUpdated": "2018-01-12T15:20:04+09:00",
+  "optUpdatedUser": {
+    "name": "PSC関塚",
+    "optMailAddress": "k-sekiduka@psc-inc.co.jp",
+    "optUserId": "k-sekiduka",
+    "roleType": 2
+  },
+  "sharedFiles": [],
+  "tags": []
+}

@@ -1,0 +1,22 @@
+{
+  "attachments": [],
+  "name": "テストサーバ一覧",
+  "optContent": "***基本ルール\r\nURL : http://UserID.psc-inc.jp/\r\nbasic認証：UserID　/　review\r\n\r\n**一覧\r\n|No|UserID|Password|クライアント名|管理者|パートナー|備考|作成日|変更日|削除日|h\r\n|1|asada|50fe14x|浅田|関塚|G8&br;トリロジー||2018/01/11|||\r\n|2|asax|50fe14x|アサックス|関塚|G8&br;オネスティ||2018/01/11|||\r\n|3|nksj|a4dOas93xo|SOMPO-RM|武井|オネスティ|URLはsjnk-rm.psc-inc.jp/&br;BASIC認証はsjnk-rm|2018/01/11|||\r\n|4|orixuser|50fe14x|オリックス&br;システム|関塚|G8|Userは orix|2018/01/11|||\r\n|5|u-as|50fe14x|宇佐美様|関塚|G8||2018/01/11|||\r\n|6|data|50fe14x|社内|関塚||データ送付用|2018/01/11|||\r\n|7|asadayaihei|50fe14x|浅田|関塚|G8&br;トリロジー|リニューアルPJ|2018/01/18|||\r\n|8|cooKai|50fe14x|第５|関塚|G8||2018/01/18|||\r\n|9|mihama|50fe14x|美浜|関塚|バース||2018/02/7|||\r\n|10|ips|j7CsWmhM|IPS|関塚|G8&br;トリロジー|basic認証は&br;ips-cosmetics|2018/01/18|||\r\n|11|toa|50fe14x|東亜工業|関塚|バース||2018/02/20|||\r\n|12|bellex|50fe14x|美浜|関塚|バース|美浜子会社|2018/03/01|||\r\n|13|amp|50fe14x|美浜|関塚|バース|美浜子会社|2018/03/01|||\r\n|14|sedia-green|a4dOas93xo|らくちんランド&br;(渡辺パイプ関連)|武井|SHORT&br;オネスティ|BASIC認証・ｻｰﾊﾞｰｱｶｳﾝﾄは&br;watanabepipe|2018/03/01|||\r\n|15|nisso-ind|a4dOas93xo|日創工業|武井|オネスティ|ｻｰﾊﾞｰｱｶｳﾝﾄは&br;nisso_ind|2018/03/22|||\r\n|16|heiwatechno|a4dOas93xo|平和テクノ&br;(渡辺パイプ関連)|武井|オネスティ|BASIC認証・ｻｰﾊﾞｰｱｶｳﾝﾄは&br;watanabepipe|2018/03/22|||\r\n|17|sedia-bs|a4dOas93xo|セディアビーエス&br;(渡辺パイプ関連)|武井|オネスティ|BASIC認証・ｻｰﾊﾞｰｱｶｳﾝﾄは&br;watanabepipe|2018/03/22|||\r\n|18|taisei-shoukai|a4dOas93xo|大成商会&br;(渡辺パイプ関連)|武井|オネスティ|BASIC認証・ｻｰﾊﾞｰｱｶｳﾝﾄは&br;watanabepipe|2018/03/22|||\r\n|19|nishinihon-green|a4dOas93xo|西日本グリーン販売&br;(渡辺パイプ関連)|武井|オネスティ|BASIC認証・ｻｰﾊﾞｰｱｶｳﾝﾄは&br;watanabepipe|2018/03/22|||\r\n|20|sedia-system-tw|a4dOas93xo|台灣渡邊建材&br;(渡辺パイプ関連)|武井|オネスティ|BASIC認証・ｻｰﾊﾞｰｱｶｳﾝﾄは&br;watanabepipe|2018/03/22|||\r\n|21|yanagikanzai|a4dOas93xo|ヤナギ管材&br;(渡辺パイプ関連)|武井|オネスティ|BASIC認証・ｻｰﾊﾞｰｱｶｳﾝﾄは&br;watanabepipe|2018/03/22|||\r\n|22|asama2000|a4dOas93xo|asama2000&br;(渡辺パイプ関連)|武井|オネスティ|BASIC認証・ｻｰﾊﾞｰｱｶｳﾝﾄは&br;watanabepipe|2018/03/22|||\r\n|23|komoro-kogen|a4dOas93xo|小諸高原ゴルフクラブ&br;(渡辺パイプ関連)|武井|オネスティ|BASIC認証・ｻｰﾊﾞｰｱｶｳﾝﾄは&br;watanabepipe|2018/03/22|||\r\n|24|sedia-system|a4dOas93xo|渡辺パイプ|武井|オネスティ|BASIC認証・ｻｰﾊﾞｰｱｶｳﾝﾄは&br;watanabepipe|2018/03/22|||\r\n|25|edovi|a4dOas93xo|エドビ&br;(渡辺パイプ関連)|武井|オネスティ|BASIC認証・ｻｰﾊﾞｰｱｶｳﾝﾄは&br;watanabepipe|2018/03/22|||\r\n|26|kncf|a4dOas93xo|経団連|関塚・武井|オネスティ||2018/03/22|||\r\n|27|bugyo-navi|a4dOas93xo|奉行ナビ||オネスティ||2018/03/22|||\r\n|28|nadeshiko|50fe14x|ダイナム 女性活躍推進サイト|武井|G8||2018/05/18|||\r\n|29|dynamu-recruit|50fe14x|ダイナム リクルートサイト|武井|G8||2018/06/14|||\r\n|30|waterworks|50fe14x|渡辺パイプ様|関塚|||2018/07/23|||\r\n|31|sedia-recruit|50fe14x|渡辺パイプ様|関塚|||2018/10/16|||\r\n|32|water-works|50fe14x|渡辺パイプ様|関塚|||2019/07/29|||",
+  "optCreated": "2018-01-12T14:24:10+09:00",
+  "optCreatedUser": {
+    "name": "PSC関塚",
+    "optMailAddress": "k-sekiduka@psc-inc.co.jp",
+    "optUserId": "k-sekiduka",
+    "roleType": 2
+  },
+  "optId": 252931,
+  "optUpdated": "2019-07-30T10:27:16+09:00",
+  "optUpdatedUser": {
+    "name": "PSC関塚",
+    "optMailAddress": "k-sekiduka@psc-inc.co.jp",
+    "optUserId": "k-sekiduka",
+    "roleType": 2
+  },
+  "sharedFiles": [],
+  "tags": []
+}

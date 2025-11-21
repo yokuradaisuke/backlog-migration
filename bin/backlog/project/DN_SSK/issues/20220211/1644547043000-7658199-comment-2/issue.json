@@ -1,0 +1,18 @@
+{
+  "changeLogs": [{
+    "field": "status",
+    "mustDeleteAttachment": false,
+    "optNewValue": "完了",
+    "optOriginalValue": "未対応"
+  }],
+  "eventType": "comment",
+  "notifications": [],
+  "optCreated": "2022-02-11T11:37:23+09:00",
+  "optCreatedUser": {
+    "name": "PSC猪股洋一",
+    "optMailAddress": "y-inomata@psc-inc.co.jp",
+    "optUserId": "y-inomata",
+    "roleType": 2
+  },
+  "optIssueId": 7658199
+}

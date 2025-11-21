@@ -1,0 +1,22 @@
+{
+  "attachments": [],
+  "name": "Kintoneの業者支払申請について",
+  "optContent": "''☆作業タイミング☆''\r\n月初\r\n※第1週目途に下記申請を行って下さい。\r\n\r\n''下記より請求書を確認してPDFに保存する'' \r\n■URL\r\nhttps://store.cybozu.com/login\r\n■ID\r\ndigital_marketing@psc-inc.co.jp\r\n■PASS\r\nkintone_psc_0406\r\n※「見積・購入・請求履歴」⇒「請求No」押下⇒表示されたご請求ダイアログより「請求書を印刷」押下\r\n\r\n''業務支払申請を行う'' \r\n&color(red) {※藤原さんが残していた申請情報をそのまま記載します。}\r\nhttps://store.cybozu.com/login?redirect=https%3A%2F%2Fstore.cybozu.com%2Fmanage%2Fhistory\r\ne-mail: web_biz_consulting@psc-inc.co.jp\r\npassword: 田辺さんに確認\r\n\r\n1． Obic\r\n\r\n2． 新規起票\r\n\r\n3． 最終ページ 業者払申請\r\n\r\n4． 計上日 ：請求月の最終日（入力日ではなく、サービスを利用した月の計上にすること）\r\n※請求書の送付と本社での財務処理の関係で申請処理が締日以降になると、利用月を計上日にすることができない。\r\nその場合、利用月の次の月の一日を計上日と締め年月日に、また、その月の最終日を支払予定日にすること。\r\n\r\n5． 管理部署： T60200\r\n\r\n6． 仕入れ先 (検索 三菱) ：P50001\r\n\r\n7． 内容 ：「Kintone使用料」\r\n\r\n8． ⇒「追加」をクリック\r\n\r\n9． Job名検索： デジタルマーケティング　\r\n　⇒ K180138-0001-0001（組織管理用PJコード）\r\n\r\n10． 使用目的 ：734000 システム関連費\r\n\r\n11．金額入力（請求書を確認）\r\n\r\n12． 費用負担部署 T60210\r\n\r\n※この時表示されるPDFの申請書を下記に保存\r\n\\\\Sv-fs01\\04_共有情報\\【島根開発拠点】\\業者支払申請",
+  "optCreated": "2018-04-06T12:12:31+09:00",
+  "optCreatedUser": {
+    "name": "PSC木村",
+    "optMailAddress": "s******a@psc-inc.co.jp",
+    "optUserId": "s-kimura",
+    "roleType": 2
+  },
+  "optId": 290878,
+  "optUpdated": "2019-06-18T14:27:46+09:00",
+  "optUpdatedUser": {
+    "name": "PSC師井",
+    "optMailAddress": "s*******i@psc-inc.co.jp",
+    "optUserId": "shu-moroi",
+    "roleType": 2
+  },
+  "sharedFiles": [],
+  "tags": []
+}

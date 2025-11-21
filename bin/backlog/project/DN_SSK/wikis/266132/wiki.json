@@ -1,0 +1,22 @@
+{
+  "attachments": [],
+  "name": "テストサーバmySQL接続",
+  "optContent": "PHPのバージョンが5.3だとDB接続文字列のホスト名が「localhost」では接続出来ない為、\r\n「172.0.0.1」に変更する必要がある。\r\n127.0.0.1\r\n\r\n\r\n\r\n",
+  "optCreated": "2018-02-08T15:23:03+09:00",
+  "optCreatedUser": {
+    "name": "PSC峯村",
+    "optMailAddress": "j-minemura@psc-inc.co.jp",
+    "optUserId": "j-minemura",
+    "roleType": 2
+  },
+  "optId": 266132,
+  "optUpdated": "2018-10-05T18:34:18+09:00",
+  "optUpdatedUser": {
+    "name": "PSC関塚",
+    "optMailAddress": "k-sekiduka@psc-inc.co.jp",
+    "optUserId": "k-sekiduka",
+    "roleType": 2
+  },
+  "sharedFiles": [],
+  "tags": []
+}

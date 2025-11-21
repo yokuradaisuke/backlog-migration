@@ -1,0 +1,22 @@
+{
+  "attachments": [],
+  "name": "発注依頼メール",
+  "optContent": "■■■■■■■■■■■■■■\r\n■■■　　通常発注　　■■■\r\n■■■■■■■■■■■■■■\r\n※発注〆切前（〆切　月末５営業日前）\r\n\r\n下記内容でパートナーからの見積を添付し\r\nパートナー窓口へ発注入力をメールで依頼\r\n\r\n■宛先\r\nパートナー窓口 <p_partner@psc-inc.co.jp>\r\n\r\n■CC\r\nWEBBC発注 <web_biz_hatyu@psc-inc.co.jp>\r\n\r\n■件名\r\n【発注入力依頼】（案件名）（発注先）\r\n\r\n■本文必須項目：\r\n=============================== \r\nPJコード：\r\n案件名： \r\n顧客名： \r\n受注金額：\r\n発注先： \r\n発注金額：（この発注の金額）\r\n原価合計：（他社への発注・労務費含めたPJ全体の原価）\r\n粗利益： （PJ全体の粗利）\r\n粗利益率：（PJ全体の粗利率）\r\n納品日：\r\nKintone URL：　P1_見込管理の方\r\n=============================== \r\n発注先担当者\r\n（氏名） （メールアドレス）\r\n--------------------\r\n\r\n\r\n■■■■■■■■■■■■■■■\r\n■■■　　事業部発注　　■■■\r\n■■■■■■■■■■■■■■■\r\n※発注〆切後（月末５営業日）\r\n\r\nObicより発注入力し起票\r\n※見積も起票時にObicに添付\r\n\r\n■宛先\r\n上長\r\n\r\n■CC\r\nWEBBC発注 <web_biz_hatyu@psc-inc.co.jp>\r\nパートナー窓口 <p_partner@psc-inc.co.jp>\r\n\r\n■件名\r\n【発注承認依頼】（案件名）（発注先）\r\n\r\n■本文必須項目：\r\n--------------------\r\n=============================== \r\n発注番号：Obicで発注申請後　表示される番号\r\nPJコード：\r\n案件名： \r\n顧客名： \r\n受注金額：\r\n発注先： \r\n発注金額：（この発注の金額）\r\n原価合計：（他社への発注・労務費含めたPJ全体の原価）\r\n粗利益： （PJ全体の粗利）\r\n粗利益率：（PJ全体の粗利率）\r\n納品日：\r\nKintone URL：P1_見込管理の方\r\n=============================================================== \r\n発注先担当者\r\n（氏名） （メールアドレス）\r\n-------------------- \r\n\r\n■■■■■■■■■■■■■■■\r\n",
+  "optCreated": "2018-11-28T13:29:25+09:00",
+  "optCreatedUser": {
+    "name": "PSC関塚",
+    "optMailAddress": "k-sekiduka@psc-inc.co.jp",
+    "optUserId": "k-sekiduka",
+    "roleType": 2
+  },
+  "optId": 386937,
+  "optUpdated": "2020-09-16T14:36:35+09:00",
+  "optUpdatedUser": {
+    "name": "PSC関塚",
+    "optMailAddress": "k-sekiduka@psc-inc.co.jp",
+    "optUserId": "k-sekiduka",
+    "roleType": 2
+  },
+  "sharedFiles": [],
+  "tags": []
+}

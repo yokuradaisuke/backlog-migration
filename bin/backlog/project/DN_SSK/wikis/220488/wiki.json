@@ -1,0 +1,22 @@
+{
+  "attachments": [],
+  "name": "Home",
+  "optContent": "*Wiki項目一覧\r\n■会社ルール\r\n　[[基本コンプライアンス]]\r\n　[[個人情報保護]]\r\n　[[開発環境における情報セキュリティガイドライン]]\r\n　[[障害時連絡体制]]\r\n　Morning News　\r\n　フロア掃除当番\r\n\r\n■事業部ルール\r\n　[[kintone運用ルール]]\r\n\r\n■業務対応　\r\n　[[支払申請一覧]]\r\n　[[NDAのみ締結する場合の申請方法]]\r\n　[[テストサーバ設定手順]]\r\n　[[テストサーバ一覧]]\r\n　[[テストサーバmySQL接続]]\r\n　[[Google Maps Platform]]\r\n　[[電話応対]]\r\n　[[発注依頼メール]]\r\n　受発注\r\n　会議室利用方法\r\n\r\n■運営業務\r\n　[[Kintoneの業者支払申請について]]\r\n　[[Backlog利用料申請について]]\r\n　[[Kintone 顧客リストへの顧客追加]]\r\n　溶解(不要紙媒体回収)",
+  "optCreated": "2017-10-20T14:49:01+09:00",
+  "optCreatedUser": {
+    "name": "PSC武井",
+    "optMailAddress": "k*****i@psc-inc.co.jp",
+    "optUserId": "k-takei",
+    "roleType": 2
+  },
+  "optId": 220488,
+  "optUpdated": "2019-07-09T13:16:33+09:00",
+  "optUpdatedUser": {
+    "name": "PSC佐藤 優孝",
+    "optMailAddress": "m****o@psc-inc.co.jp",
+    "optUserId": "m-sato",
+    "roleType": 2
+  },
+  "sharedFiles": [],
+  "tags": []
+}

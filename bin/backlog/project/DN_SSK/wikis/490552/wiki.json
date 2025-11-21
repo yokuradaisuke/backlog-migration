@@ -1,0 +1,25 @@
+{
+  "attachments": [{
+    "name": "Kintone顧客リストへの顧客追加方法.xlsx",
+    "optId": 180452
+  }],
+  "name": "Kintone 顧客リストへの顧客追加",
+  "optContent": "追加方法については添付資料参照ください。\r\n\r\n※管理上、Kintoneの顧客情報とOBICの情報を一致させる必要があるため、\r\n　OBICの情報は正しく転記ください。\r\n",
+  "optCreated": "2019-07-09T13:09:50+09:00",
+  "optCreatedUser": {
+    "name": "PSC佐藤 優孝",
+    "optMailAddress": "m****o@psc-inc.co.jp",
+    "optUserId": "m-sato",
+    "roleType": 2
+  },
+  "optId": 490552,
+  "optUpdated": "2019-07-09T13:12:37+09:00",
+  "optUpdatedUser": {
+    "name": "PSC佐藤 優孝",
+    "optMailAddress": "m****o@psc-inc.co.jp",
+    "optUserId": "m-sato",
+    "roleType": 2
+  },
+  "sharedFiles": [],
+  "tags": []
+}

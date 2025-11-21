@@ -1,0 +1,50 @@
+{
+  "attachments": [],
+  "categoryNames": [],
+  "customFields": [],
+  "description": "どの領域でツールビジネスを図るか、検討",
+  "eventType": "issue",
+  "id": 7658199,
+  "issueKey": "DM_INT-2",
+  "milestoneNames": [],
+  "notifiedUsers": [],
+  "operation": {
+    "optCreated": "2018-11-20T11:55:37+09:00",
+    "optCreatedUser": {
+      "name": "PSC北添",
+      "optMailAddress": "m-kitazoe@psc-inc.co.jp",
+      "optUserId": "m-kitazoe",
+      "roleType": 2
+    },
+    "optUpdated": "2022-02-11T11:37:23+09:00",
+    "optUpdatedUser": {
+      "name": "PSC猪股洋一",
+      "optMailAddress": "y-inomata@psc-inc.co.jp",
+      "optUserId": "y-inomata",
+      "roleType": 2
+    }
+  },
+  "optAssignee": {
+    "name": "PSC北添",
+    "optMailAddress": "m-kitazoe@psc-inc.co.jp",
+    "optUserId": "m-kitazoe",
+    "roleType": 2
+  },
+  "optDueDate": "2018-12-31",
+  "optIssueTypeName": "タスク",
+  "priorityName": "高",
+  "sharedFiles": [],
+  "status": {
+    "type": "default",
+    "value": {
+      "displayOrder": 4000,
+      "id": 4,
+      "name": "完了"
+    }
+  },
+  "summary": {
+    "original": "ツールビジネス検討",
+    "value": "ツールビジネス検討"
+  },
+  "versionNames": []
+}

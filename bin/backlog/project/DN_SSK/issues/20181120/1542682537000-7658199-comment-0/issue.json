@@ -1,0 +1,21 @@
+{
+  "changeLogs": [{
+    "field": "attachment",
+    "mustDeleteAttachment": false,
+    "optAttachmentInfo": {
+      "name": "マーケティングテクノロジーカオスマップ_ver0.3_北添.xlsx",
+      "optId": 4030145
+    },
+    "optNewValue": "マーケティングテクノロジーカオスマップ_ver0.3_北添.xlsx"
+  }],
+  "eventType": "comment",
+  "notifications": [],
+  "optCreated": "2018-11-20T11:55:37+09:00",
+  "optCreatedUser": {
+    "name": "PSC北添",
+    "optMailAddress": "m-kitazoe@psc-inc.co.jp",
+    "optUserId": "m-kitazoe",
+    "roleType": 2
+  },
+  "optIssueId": 7658199
+}

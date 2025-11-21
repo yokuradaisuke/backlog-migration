@@ -1,0 +1,1080 @@
+2025/11/21 00:10:18.977 676  [main-pekko.actor.default-dispatcher-5] INFO  o.a.pekko.event.slf4j.Slf4jLogger - Slf4jLogger started
+2025/11/21 00:10:20.508 2207 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+Backlog Migration 1.7.0 (c) nulab.inc
+--------------------------------------------------
+2025/11/21 00:10:21.174 2873 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:10:21.253 2952 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - --------------------------------------------------
+移行元 URL[https://psclabo.backlog.jp]
+移行元 アクセスキー[modules)  ? Compiled in 86ms (327 modules)  ? Compiled in 88ms (327 modules)  ? Compiled in 84ms (327 modules)  ? Compiled in 100ms (327 modules)  ? Compiled in 126ms (327 modules)  ? Compiled in 88ms (327 modules)  GET / 200 in 271ms  ? Compiled /_not-found in 435ms (654 modules)  GET /.well-known/appspecific/com.chrome.devtools.json 404 in 731ms  ? Compiled /api/migration/init in 226ms (369 modules) Init API called Request body: {   srcUrl: 'https://psclabo.backlog.jp',   dstUrl: 'https://psoc.backlog.com',   projectKey: 'DM_INT:YK_TEST' } Paths: {   rootDir: 'Z:\\Users\\d-yokura\\backlog-migration-1.7.0',   binPath: 'Z:\\Users\\d-yokura\\backlog-migration-1.7.0\\bin\\backlog-migration.bat' } Binary file exists: true  ? Error: spawn EINVAL     at ChildProcess.spawn (node:internal/child_process:414:11)     at spawn (node:child_process:761:9)     at eval (webpack-internal:///(rsc)/./src/app/api/migration/init/route.ts:74:82)     at new Promise (<anonymous>)     at POST (webpack-internal:///(rsc)/./src/app/api/migration/init/route.ts:73:16)     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)     at async Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038     at async ek.execute (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)     at async ek.handle (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)     at async doRender (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1377:42)     at async cacheEntry.responseCache.get.routeKind (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1599:28)     at async DevServer.renderToResponseWithComponentsImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1507:28)     at async DevServer.renderPageComponent (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1931:24)     at async DevServer.renderToResponseImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1969:32)     at async DevServer.pipeImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:920:25)      at async NextNodeServer.handleCatchallRenderRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\next-server.js:272:17)     at async DevServer.handleRequestImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:816:17)     at async Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\dev\next-dev-server.js:339:20     at async Span.traceAsyncFn (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\trace\trace.js:154:20)     at async DevServer.handleRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\dev\next-dev-server.js:336:24)     at async invokeRender (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:174:21)      at async handleRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:353:24)     at async requestHandlerImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:377:13)     at async Server.requestListener (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\start-server.js:141:13) {   errno: -4071,   code: 'EINVAL',   syscall: 'spawn' }  POST /api/migration/init 500 in 496ms]
+移行元 プロジェクトキー[DM_INT]
+移行先 URL[https://psoc.backlog.com]
+移行先 アクセスキー[c4Es67hf5ymyLdvgdarkxBre63CoWOY8fInBGwq3SaZa6aWGw959EiVErb5B2fwC]
+移行先 プロジェクトキー[YK_TEST]
+フィルター[]
+インポートのみ実行[false]
+課題キーを一致させる[false]
+エラー時の再試行回数[3]
+https.proxyHost[]
+https.proxyPort[]
+https.proxyUser[]
+https.proxyPassword[]
+--------------------------------------------------
+
+2025/11/21 00:10:21.559 3258 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:10:22.564 4263 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Received response with status: 200
+2025/11/21 00:10:22.564 4263 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Response data is [B@66bad031
+2025/11/21 00:10:22.566 4265 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+--------------------------------------------------
+最新バージョン[1.6.0]がリリースされています。現在のバージョンは[1.7.0]です。
+--------------------------------------------------
+       
+2025/11/21 00:10:22.572 4271 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元にアクセス可能かチェックしています...
+2025/11/21 00:10:22.940 4639 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:401 url:https://psclabo.backlog.jp/api/v2/space
+2025/11/21 00:10:23.197 4896 [scala-execution-context-global-26] ERROR c.n.b.b2b.cli.ParameterValidator - backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getSpace(BacklogClientImpl.java:36)
+	at com.nulabinc.backlog.migration.common.service.SpaceServiceImpl.space(SpaceServiceImpl.scala:20)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validateConfig(ParameterValidator.scala:88)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validate(ParameterValidator.scala:19)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.validateParam(BacklogMigrationCli.scala:147)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.init(BacklogMigrationCli.scala:58)
+	at com.nulabinc.backlog.b2b.Main$.$anonfun$execute$1(Main.scala:162)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 00:10:23.198 4897 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先にアクセス可能かチェックしています...
+2025/11/21 00:10:23.375 5074 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space
+2025/11/21 00:10:23.391 5090 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元のプロジェクトを取得しています...
+2025/11/21 00:10:23.524 5223 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:401 url:https://psclabo.backlog.jp/api/v2/projects/DM_INT
+2025/11/21 00:10:23.524 5223 [scala-execution-context-global-26] ERROR c.n.b.m.c.s.ProjectServiceImpl - backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getProject(BacklogClientImpl.java:94)
+	at com.nulabinc.backlog.migration.common.service.ProjectServiceImpl.optProject(ProjectServiceImpl.scala:33)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.optProject(ParameterValidator.scala:142)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validate(ParameterValidator.scala:22)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.validateParam(BacklogMigrationCli.scala:147)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.init(BacklogMigrationCli.scala:58)
+	at com.nulabinc.backlog.b2b.Main$.$anonfun$execute$1(Main.scala:162)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 00:10:23.524 5223 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先のプロジェクトを取得しています...
+2025/11/21 00:10:23.645 5344 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/projects/YK_TEST
+2025/11/21 00:10:23.659 5358 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 管理者権限の有無をチェックしています...
+2025/11/21 00:10:23.839 5538 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space/diskUsage
+2025/11/21 00:10:23.852 5551 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+
+パラメーターに次の誤りがあります。
+--------------------------------------------------
+- 移行元Backlogにアクセスできませんでした。URLまたはAPIアクセスキーを確認してください。
+
+       
+2025/11/21 00:10:23.852 5551 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 原因または対処方法が不明の場合は、ヘルプページをご覧ください: https://support-ja.backlog.com/hc/ja/articles/29471143249817
+2025/11/21 00:13:04.138 705  [main-pekko.actor.default-dispatcher-4] INFO  o.a.pekko.event.slf4j.Slf4jLogger - Slf4jLogger started
+2025/11/21 00:13:05.377 1944 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+Backlog Migration 1.7.0 (c) nulab.inc
+--------------------------------------------------
+2025/11/21 00:13:05.896 2463 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:13:05.959 2526 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - --------------------------------------------------
+移行元 URL[https://psclabo.backlog.jp]
+移行元 アクセスキー[modules)  ? Compiled in 86ms (327 modules)  ? Compiled in 88ms (327 modules)  ? Compiled in 84ms (327 modules)  ? Compiled in 100ms (327 modules)  ? Compiled in 126ms (327 modules)  ? Compiled in 88ms (327 modules)  GET / 200 in 271ms  ? Compiled /_not-found in 435ms (654 modules)  GET /.well-known/appspecific/com.chrome.devtools.json 404 in 731ms  ? Compiled /api/migration/init in 226ms (369 modules) Init API called Request body: {   srcUrl: 'https://psclabo.backlog.jp',   dstUrl: 'https://psoc.backlog.com',   projectKey: 'DM_INT:YK_TEST' } Paths: {   rootDir: 'Z:\\Users\\d-yokura\\backlog-migration-1.7.0',   binPath: 'Z:\\Users\\d-yokura\\backlog-migration-1.7.0\\bin\\backlog-migration.bat' } Binary file exists: true  ? Error: spawn EINVAL     at ChildProcess.spawn (node:internal/child_process:414:11)     at spawn (node:child_process:761:9)     at eval (webpack-internal:///(rsc)/./src/app/api/migration/init/route.ts:74:82)     at new Promise (<anonymous>)     at POST (webpack-internal:///(rsc)/./src/app/api/migration/init/route.ts:73:16)     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)     at async Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038     at async ek.execute (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)     at async ek.handle (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)     at async doRender (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1377:42)     at async cacheEntry.responseCache.get.routeKind (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1599:28)     at async DevServer.renderToResponseWithComponentsImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1507:28)     at async DevServer.renderPageComponent (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1931:24)     at async DevServer.renderToResponseImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1969:32)     at async DevServer.pipeImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:920:25)      at async NextNodeServer.handleCatchallRenderRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\next-server.js:272:17)     at async DevServer.handleRequestImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:816:17)     at async Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\dev\next-dev-server.js:339:20     at async Span.traceAsyncFn (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\trace\trace.js:154:20)     at async DevServer.handleRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\dev\next-dev-server.js:336:24)     at async invokeRender (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:174:21)      at async handleRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:353:24)     at async requestHandlerImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:377:13)     at async Server.requestListener (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\start-server.js:141:13) {   errno: -4071,   code: 'EINVAL',   syscall: 'spawn' }  POST /api/migration/init 500 in 496ms]
+移行元 プロジェクトキー[DM_INT]
+移行先 URL[https://psoc.backlog.com]
+移行先 アクセスキー[c4Es67hf5ymyLdvgdarkxBre63CoWOY8fInBGwq3SaZa6aWGw959EiVErb5B2fwC]
+移行先 プロジェクトキー[YK_TEST]
+フィルター[]
+インポートのみ実行[false]
+課題キーを一致させる[false]
+エラー時の再試行回数[3]
+https.proxyHost[]
+https.proxyPort[]
+https.proxyUser[]
+https.proxyPassword[]
+--------------------------------------------------
+
+2025/11/21 00:13:06.168 2735 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:13:07.124 3691 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Received response with status: 200
+2025/11/21 00:13:07.124 3691 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Response data is [B@1010673
+2025/11/21 00:13:07.135 3702 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+--------------------------------------------------
+最新バージョン[1.6.0]がリリースされています。現在のバージョンは[1.7.0]です。
+--------------------------------------------------
+       
+2025/11/21 00:13:07.139 3706 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元にアクセス可能かチェックしています...
+2025/11/21 00:13:07.533 4100 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:401 url:https://psclabo.backlog.jp/api/v2/space
+2025/11/21 00:13:07.723 4290 [scala-execution-context-global-26] ERROR c.n.b.b2b.cli.ParameterValidator - backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getSpace(BacklogClientImpl.java:36)
+	at com.nulabinc.backlog.migration.common.service.SpaceServiceImpl.space(SpaceServiceImpl.scala:20)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validateConfig(ParameterValidator.scala:88)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validate(ParameterValidator.scala:19)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.validateParam(BacklogMigrationCli.scala:147)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.migrate(BacklogMigrationCli.scala:78)
+	at com.nulabinc.backlog.b2b.Main$.$anonfun$execute$1(Main.scala:160)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 00:13:07.723 4290 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先にアクセス可能かチェックしています...
+2025/11/21 00:13:07.967 4534 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space
+2025/11/21 00:13:07.981 4548 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元のプロジェクトを取得しています...
+2025/11/21 00:13:08.100 4667 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:401 url:https://psclabo.backlog.jp/api/v2/projects/DM_INT
+2025/11/21 00:13:08.100 4667 [scala-execution-context-global-26] ERROR c.n.b.m.c.s.ProjectServiceImpl - backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getProject(BacklogClientImpl.java:94)
+	at com.nulabinc.backlog.migration.common.service.ProjectServiceImpl.optProject(ProjectServiceImpl.scala:33)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.optProject(ParameterValidator.scala:142)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validate(ParameterValidator.scala:22)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.validateParam(BacklogMigrationCli.scala:147)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.migrate(BacklogMigrationCli.scala:78)
+	at com.nulabinc.backlog.b2b.Main$.$anonfun$execute$1(Main.scala:160)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 00:13:08.101 4668 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先のプロジェクトを取得しています...
+2025/11/21 00:13:08.251 4818 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/projects/YK_TEST
+2025/11/21 00:13:08.259 4826 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 管理者権限の有無をチェックしています...
+2025/11/21 00:13:08.386 4953 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space/diskUsage
+2025/11/21 00:13:08.402 4969 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+
+パラメーターに次の誤りがあります。
+--------------------------------------------------
+- 移行元Backlogにアクセスできませんでした。URLまたはAPIアクセスキーを確認してください。
+
+       
+2025/11/21 00:13:08.402 4969 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 原因または対処方法が不明の場合は、ヘルプページをご覧ください: https://support-ja.backlog.com/hc/ja/articles/29471143249817
+2025/11/21 00:15:19.337 789  [main-pekko.actor.default-dispatcher-4] INFO  o.a.pekko.event.slf4j.Slf4jLogger - Slf4jLogger started
+2025/11/21 00:15:21.189 2641 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+Backlog Migration 1.7.0 (c) nulab.inc
+--------------------------------------------------
+2025/11/21 00:15:21.577 3029 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:15:21.687 3139 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - --------------------------------------------------
+移行元 URL[https://psclabo.backlog.jp]
+移行元 アクセスキー[modules)  ? Compiled in 86ms (327 modules)  ? Compiled in 88ms (327 modules)  ? Compiled in 84ms (327 modules)  ? Compiled in 100ms (327 modules)  ? Compiled in 126ms (327 modules)  ? Compiled in 88ms (327 modules)  GET / 200 in 271ms  ? Compiled /_not-found in 435ms (654 modules)  GET /.well-known/appspecific/com.chrome.devtools.json 404 in 731ms  ? Compiled /api/migration/init in 226ms (369 modules) Init API called Request body: {   srcUrl: 'https://psclabo.backlog.jp',   dstUrl: 'https://psoc.backlog.com',   projectKey: 'DM_INT:YK_TEST' } Paths: {   rootDir: 'Z:\\Users\\d-yokura\\backlog-migration-1.7.0',   binPath: 'Z:\\Users\\d-yokura\\backlog-migration-1.7.0\\bin\\backlog-migration.bat' } Binary file exists: true  ? Error: spawn EINVAL     at ChildProcess.spawn (node:internal/child_process:414:11)     at spawn (node:child_process:761:9)     at eval (webpack-internal:///(rsc)/./src/app/api/migration/init/route.ts:74:82)     at new Promise (<anonymous>)     at POST (webpack-internal:///(rsc)/./src/app/api/migration/init/route.ts:73:16)     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)     at async Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038     at async ek.execute (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)     at async ek.handle (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)     at async doRender (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1377:42)     at async cacheEntry.responseCache.get.routeKind (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1599:28)     at async DevServer.renderToResponseWithComponentsImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1507:28)     at async DevServer.renderPageComponent (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1931:24)     at async DevServer.renderToResponseImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1969:32)     at async DevServer.pipeImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:920:25)      at async NextNodeServer.handleCatchallRenderRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\next-server.js:272:17)     at async DevServer.handleRequestImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:816:17)     at async Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\dev\next-dev-server.js:339:20     at async Span.traceAsyncFn (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\trace\trace.js:154:20)     at async DevServer.handleRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\dev\next-dev-server.js:336:24)     at async invokeRender (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:174:21)      at async handleRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:353:24)     at async requestHandlerImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:377:13)     at async Server.requestListener (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\start-server.js:141:13) {   errno: -4071,   code: 'EINVAL',   syscall: 'spawn' }  POST /api/migration/init 500 in 496ms]
+移行元 プロジェクトキー[DM_INT]
+移行先 URL[https://psoc.backlog.com]
+移行先 アクセスキー[c4Es67hf5ymyLdvgdarkxBre63CoWOY8fInBGwq3SaZa6aWGw959EiVErb5B2fwC]
+移行先 プロジェクトキー[YK_TEST]
+フィルター[]
+インポートのみ実行[false]
+課題キーを一致させる[false]
+エラー時の再試行回数[3]
+https.proxyHost[]
+https.proxyPort[]
+https.proxyUser[]
+https.proxyPassword[]
+--------------------------------------------------
+
+2025/11/21 00:15:21.942 3394 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:15:23.029 4481 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Received response with status: 200
+2025/11/21 00:15:23.030 4482 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Response data is [B@1f7581c5
+2025/11/21 00:15:23.032 4484 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+--------------------------------------------------
+最新バージョン[1.6.0]がリリースされています。現在のバージョンは[1.7.0]です。
+--------------------------------------------------
+       
+2025/11/21 00:15:23.043 4495 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元にアクセス可能かチェックしています...
+2025/11/21 00:15:23.415 4867 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:401 url:https://psclabo.backlog.jp/api/v2/space
+2025/11/21 00:15:23.608 5060 [scala-execution-context-global-26] ERROR c.n.b.b2b.cli.ParameterValidator - backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getSpace(BacklogClientImpl.java:36)
+	at com.nulabinc.backlog.migration.common.service.SpaceServiceImpl.space(SpaceServiceImpl.scala:20)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validateConfig(ParameterValidator.scala:88)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validate(ParameterValidator.scala:19)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.validateParam(BacklogMigrationCli.scala:147)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.migrate(BacklogMigrationCli.scala:78)
+	at com.nulabinc.backlog.b2b.Main$.$anonfun$execute$1(Main.scala:160)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 00:15:23.609 5061 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先にアクセス可能かチェックしています...
+2025/11/21 00:15:23.781 5233 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space
+2025/11/21 00:15:23.798 5250 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元のプロジェクトを取得しています...
+2025/11/21 00:15:23.912 5364 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:401 url:https://psclabo.backlog.jp/api/v2/projects/DM_INT
+2025/11/21 00:15:23.914 5366 [scala-execution-context-global-26] ERROR c.n.b.m.c.s.ProjectServiceImpl - backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getProject(BacklogClientImpl.java:94)
+	at com.nulabinc.backlog.migration.common.service.ProjectServiceImpl.optProject(ProjectServiceImpl.scala:33)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.optProject(ParameterValidator.scala:142)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validate(ParameterValidator.scala:22)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.validateParam(BacklogMigrationCli.scala:147)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.migrate(BacklogMigrationCli.scala:78)
+	at com.nulabinc.backlog.b2b.Main$.$anonfun$execute$1(Main.scala:160)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 00:15:23.914 5366 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先のプロジェクトを取得しています...
+2025/11/21 00:15:24.060 5512 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/projects/YK_TEST
+2025/11/21 00:15:24.067 5519 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 管理者権限の有無をチェックしています...
+2025/11/21 00:15:24.176 5628 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space/diskUsage
+2025/11/21 00:15:24.204 5656 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+
+パラメーターに次の誤りがあります。
+--------------------------------------------------
+- 移行元Backlogにアクセスできませんでした。URLまたはAPIアクセスキーを確認してください。
+
+       
+2025/11/21 00:15:24.204 5656 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 原因または対処方法が不明の場合は、ヘルプページをご覧ください: https://support-ja.backlog.com/hc/ja/articles/29471143249817
+2025/11/21 00:16:28.840 863  [main-pekko.actor.default-dispatcher-5] INFO  o.a.pekko.event.slf4j.Slf4jLogger - Slf4jLogger started
+2025/11/21 00:16:30.746 2769 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+Backlog Migration 1.7.0 (c) nulab.inc
+--------------------------------------------------
+2025/11/21 00:16:31.407 3430 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:16:31.527 3550 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - --------------------------------------------------
+移行元 URL[https://psclabo.backlog.jp]
+移行元 アクセスキー[modules)  ? Compiled in 86ms (327 modules)  ? Compiled in 88ms (327 modules)  ? Compiled in 84ms (327 modules)  ? Compiled in 100ms (327 modules)  ? Compiled in 126ms (327 modules)  ? Compiled in 88ms (327 modules)  GET / 200 in 271ms  ? Compiled /_not-found in 435ms (654 modules)  GET /.well-known/appspecific/com.chrome.devtools.json 404 in 731ms  ? Compiled /api/migration/init in 226ms (369 modules) Init API called Request body: {   srcUrl: 'https://psclabo.backlog.jp',   dstUrl: 'https://psoc.backlog.com',   projectKey: 'DM_INT:YK_TEST' } Paths: {   rootDir: 'Z:\\Users\\d-yokura\\backlog-migration-1.7.0',   binPath: 'Z:\\Users\\d-yokura\\backlog-migration-1.7.0\\bin\\backlog-migration.bat' } Binary file exists: true  ? Error: spawn EINVAL     at ChildProcess.spawn (node:internal/child_process:414:11)     at spawn (node:child_process:761:9)     at eval (webpack-internal:///(rsc)/./src/app/api/migration/init/route.ts:74:82)     at new Promise (<anonymous>)     at POST (webpack-internal:///(rsc)/./src/app/api/migration/init/route.ts:73:16)     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)     at async Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038     at async ek.execute (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)     at async ek.handle (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)     at async doRender (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1377:42)     at async cacheEntry.responseCache.get.routeKind (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1599:28)     at async DevServer.renderToResponseWithComponentsImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1507:28)     at async DevServer.renderPageComponent (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1931:24)     at async DevServer.renderToResponseImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1969:32)     at async DevServer.pipeImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:920:25)      at async NextNodeServer.handleCatchallRenderRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\next-server.js:272:17)     at async DevServer.handleRequestImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:816:17)     at async Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\dev\next-dev-server.js:339:20     at async Span.traceAsyncFn (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\trace\trace.js:154:20)     at async DevServer.handleRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\dev\next-dev-server.js:336:24)     at async invokeRender (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:174:21)      at async handleRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:353:24)     at async requestHandlerImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:377:13)     at async Server.requestListener (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\start-server.js:141:13) {   errno: -4071,   code: 'EINVAL',   syscall: 'spawn' }  POST /api/migration/init 500 in 496ms]
+移行元 プロジェクトキー[DM_INT]
+移行先 URL[https://psoc.backlog.com]
+移行先 アクセスキー[c4Es67hf5ymyLdvgdarkxBre63CoWOY8fInBGwq3SaZa6aWGw959EiVErb5B2fwC]
+移行先 プロジェクトキー[YK_TEST]
+フィルター[]
+インポートのみ実行[false]
+課題キーを一致させる[false]
+エラー時の再試行回数[3]
+https.proxyHost[]
+https.proxyPort[]
+https.proxyUser[]
+https.proxyPassword[]
+--------------------------------------------------
+
+2025/11/21 00:16:31.839 3862 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:16:32.900 4923 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Received response with status: 200
+2025/11/21 00:16:32.900 4923 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Response data is [B@77571cd9
+2025/11/21 00:16:32.900 4923 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+--------------------------------------------------
+最新バージョン[1.6.0]がリリースされています。現在のバージョンは[1.7.0]です。
+--------------------------------------------------
+       
+2025/11/21 00:16:32.906 4929 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元にアクセス可能かチェックしています...
+2025/11/21 00:16:33.342 5365 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:401 url:https://psclabo.backlog.jp/api/v2/space
+2025/11/21 00:16:33.574 5597 [scala-execution-context-global-26] ERROR c.n.b.b2b.cli.ParameterValidator - backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getSpace(BacklogClientImpl.java:36)
+	at com.nulabinc.backlog.migration.common.service.SpaceServiceImpl.space(SpaceServiceImpl.scala:20)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validateConfig(ParameterValidator.scala:88)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validate(ParameterValidator.scala:19)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.validateParam(BacklogMigrationCli.scala:147)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.migrate(BacklogMigrationCli.scala:78)
+	at com.nulabinc.backlog.b2b.Main$.$anonfun$execute$1(Main.scala:160)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 00:16:33.574 5597 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先にアクセス可能かチェックしています...
+2025/11/21 00:16:33.758 5781 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space
+2025/11/21 00:16:33.774 5797 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元のプロジェクトを取得しています...
+2025/11/21 00:16:33.885 5908 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:401 url:https://psclabo.backlog.jp/api/v2/projects/DM_INT
+2025/11/21 00:16:33.885 5908 [scala-execution-context-global-26] ERROR c.n.b.m.c.s.ProjectServiceImpl - backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getProject(BacklogClientImpl.java:94)
+	at com.nulabinc.backlog.migration.common.service.ProjectServiceImpl.optProject(ProjectServiceImpl.scala:33)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.optProject(ParameterValidator.scala:142)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validate(ParameterValidator.scala:22)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.validateParam(BacklogMigrationCli.scala:147)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.migrate(BacklogMigrationCli.scala:78)
+	at com.nulabinc.backlog.b2b.Main$.$anonfun$execute$1(Main.scala:160)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 00:16:33.885 5908 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先のプロジェクトを取得しています...
+2025/11/21 00:16:34.013 6036 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/projects/YK_TEST
+2025/11/21 00:16:34.028 6051 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 管理者権限の有無をチェックしています...
+2025/11/21 00:16:34.172 6195 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space/diskUsage
+2025/11/21 00:16:34.188 6211 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+
+パラメーターに次の誤りがあります。
+--------------------------------------------------
+- 移行元Backlogにアクセスできませんでした。URLまたはAPIアクセスキーを確認してください。
+
+       
+2025/11/21 00:16:34.188 6211 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 原因または対処方法が不明の場合は、ヘルプページをご覧ください: https://support-ja.backlog.com/hc/ja/articles/29471143249817
+2025/11/21 00:18:29.902 954  [main-pekko.actor.default-dispatcher-5] INFO  o.a.pekko.event.slf4j.Slf4jLogger - Slf4jLogger started
+2025/11/21 00:18:31.682 2734 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+Backlog Migration 1.7.0 (c) nulab.inc
+--------------------------------------------------
+2025/11/21 00:18:32.200 3252 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:18:32.340 3392 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - --------------------------------------------------
+移行元 URL[https://psclabo.backlog.jp]
+移行元 アクセスキー[modules)  ? Compiled in 86ms (327 modules)  ? Compiled in 88ms (327 modules)  ? Compiled in 84ms (327 modules)  ? Compiled in 100ms (327 modules)  ? Compiled in 126ms (327 modules)  ? Compiled in 88ms (327 modules)  GET / 200 in 271ms  ? Compiled /_not-found in 435ms (654 modules)  GET /.well-known/appspecific/com.chrome.devtools.json 404 in 731ms  ? Compiled /api/migration/init in 226ms (369 modules) Init API called Request body: {   srcUrl: 'https://psclabo.backlog.jp',   dstUrl: 'https://psoc.backlog.com',   projectKey: 'DM_INT:YK_TEST' } Paths: {   rootDir: 'Z:\\Users\\d-yokura\\backlog-migration-1.7.0',   binPath: 'Z:\\Users\\d-yokura\\backlog-migration-1.7.0\\bin\\backlog-migration.bat' } Binary file exists: true  ? Error: spawn EINVAL     at ChildProcess.spawn (node:internal/child_process:414:11)     at spawn (node:child_process:761:9)     at eval (webpack-internal:///(rsc)/./src/app/api/migration/init/route.ts:74:82)     at new Promise (<anonymous>)     at POST (webpack-internal:///(rsc)/./src/app/api/migration/init/route.ts:73:16)     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)     at async Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038     at async ek.execute (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)     at async ek.handle (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)     at async doRender (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1377:42)     at async cacheEntry.responseCache.get.routeKind (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1599:28)     at async DevServer.renderToResponseWithComponentsImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1507:28)     at async DevServer.renderPageComponent (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1931:24)     at async DevServer.renderToResponseImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1969:32)     at async DevServer.pipeImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:920:25)      at async NextNodeServer.handleCatchallRenderRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\next-server.js:272:17)     at async DevServer.handleRequestImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:816:17)     at async Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\dev\next-dev-server.js:339:20     at async Span.traceAsyncFn (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\trace\trace.js:154:20)     at async DevServer.handleRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\dev\next-dev-server.js:336:24)     at async invokeRender (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:174:21)      at async handleRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:353:24)     at async requestHandlerImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:377:13)     at async Server.requestListener (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\start-server.js:141:13) {   errno: -4071,   code: 'EINVAL',   syscall: 'spawn' }  POST /api/migration/init 500 in 496ms]
+移行元 プロジェクトキー[DM_INT]
+移行先 URL[https://psoc.backlog.com]
+移行先 アクセスキー[c4Es67hf5ymyLdvgdarkxBre63CoWOY8fInBGwq3SaZa6aWGw959EiVErb5B2fwC]
+移行先 プロジェクトキー[YK_TEST]
+フィルター[]
+インポートのみ実行[false]
+課題キーを一致させる[false]
+エラー時の再試行回数[3]
+https.proxyHost[]
+https.proxyPort[]
+https.proxyUser[]
+https.proxyPassword[]
+--------------------------------------------------
+
+2025/11/21 00:18:32.671 3723 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:18:33.681 4733 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Received response with status: 200
+2025/11/21 00:18:33.681 4733 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Response data is [B@51c265b3
+2025/11/21 00:18:33.681 4733 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+--------------------------------------------------
+最新バージョン[1.6.0]がリリースされています。現在のバージョンは[1.7.0]です。
+--------------------------------------------------
+       
+2025/11/21 00:18:33.709 4761 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元にアクセス可能かチェックしています...
+2025/11/21 00:18:34.119 5171 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:401 url:https://psclabo.backlog.jp/api/v2/space
+2025/11/21 00:18:34.325 5377 [scala-execution-context-global-26] ERROR c.n.b.b2b.cli.ParameterValidator - backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getSpace(BacklogClientImpl.java:36)
+	at com.nulabinc.backlog.migration.common.service.SpaceServiceImpl.space(SpaceServiceImpl.scala:20)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validateConfig(ParameterValidator.scala:88)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validate(ParameterValidator.scala:19)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.validateParam(BacklogMigrationCli.scala:147)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.migrate(BacklogMigrationCli.scala:78)
+	at com.nulabinc.backlog.b2b.Main$.$anonfun$execute$1(Main.scala:160)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 00:18:34.325 5377 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先にアクセス可能かチェックしています...
+2025/11/21 00:18:34.542 5594 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space
+2025/11/21 00:18:34.560 5612 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元のプロジェクトを取得しています...
+2025/11/21 00:18:34.714 5766 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:401 url:https://psclabo.backlog.jp/api/v2/projects/DM_INT
+2025/11/21 00:18:34.716 5768 [scala-execution-context-global-26] ERROR c.n.b.m.c.s.ProjectServiceImpl - backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getProject(BacklogClientImpl.java:94)
+	at com.nulabinc.backlog.migration.common.service.ProjectServiceImpl.optProject(ProjectServiceImpl.scala:33)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.optProject(ParameterValidator.scala:142)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validate(ParameterValidator.scala:22)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.validateParam(BacklogMigrationCli.scala:147)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.migrate(BacklogMigrationCli.scala:78)
+	at com.nulabinc.backlog.b2b.Main$.$anonfun$execute$1(Main.scala:160)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 00:18:34.716 5768 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先のプロジェクトを取得しています...
+2025/11/21 00:18:34.879 5931 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/projects/YK_TEST
+2025/11/21 00:18:34.898 5950 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 管理者権限の有無をチェックしています...
+2025/11/21 00:18:35.033 6085 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space/diskUsage
+2025/11/21 00:18:35.047 6099 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+
+パラメーターに次の誤りがあります。
+--------------------------------------------------
+- 移行元Backlogにアクセスできませんでした。URLまたはAPIアクセスキーを確認してください。
+
+       
+2025/11/21 00:18:35.048 6100 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 原因または対処方法が不明の場合は、ヘルプページをご覧ください: https://support-ja.backlog.com/hc/ja/articles/29471143249817
+2025/11/21 00:20:10.086 909  [main-pekko.actor.default-dispatcher-4] INFO  o.a.pekko.event.slf4j.Slf4jLogger - Slf4jLogger started
+2025/11/21 00:20:11.755 2578 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+Backlog Migration 1.7.0 (c) nulab.inc
+--------------------------------------------------
+2025/11/21 00:20:12.225 3048 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:20:12.363 3186 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - --------------------------------------------------
+移行元 URL[https://psclabo.backlog.jp]
+移行元 アクセスキー[modules)  ? Compiled in 86ms (327 modules)  ? Compiled in 88ms (327 modules)  ? Compiled in 84ms (327 modules)  ? Compiled in 100ms (327 modules)  ? Compiled in 126ms (327 modules)  ? Compiled in 88ms (327 modules)  GET / 200 in 271ms  ? Compiled /_not-found in 435ms (654 modules)  GET /.well-known/appspecific/com.chrome.devtools.json 404 in 731ms  ? Compiled /api/migration/init in 226ms (369 modules) Init API called Request body: {   srcUrl: 'https://psclabo.backlog.jp',   dstUrl: 'https://psoc.backlog.com',   projectKey: 'DM_INT:YK_TEST' } Paths: {   rootDir: 'Z:\\Users\\d-yokura\\backlog-migration-1.7.0',   binPath: 'Z:\\Users\\d-yokura\\backlog-migration-1.7.0\\bin\\backlog-migration.bat' } Binary file exists: true  ? Error: spawn EINVAL     at ChildProcess.spawn (node:internal/child_process:414:11)     at spawn (node:child_process:761:9)     at eval (webpack-internal:///(rsc)/./src/app/api/migration/init/route.ts:74:82)     at new Promise (<anonymous>)     at POST (webpack-internal:///(rsc)/./src/app/api/migration/init/route.ts:73:16)     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)     at async Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038     at async ek.execute (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)     at async ek.handle (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)     at async doRender (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1377:42)     at async cacheEntry.responseCache.get.routeKind (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1599:28)     at async DevServer.renderToResponseWithComponentsImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1507:28)     at async DevServer.renderPageComponent (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1931:24)     at async DevServer.renderToResponseImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1969:32)     at async DevServer.pipeImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:920:25)      at async NextNodeServer.handleCatchallRenderRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\next-server.js:272:17)     at async DevServer.handleRequestImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:816:17)     at async Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\dev\next-dev-server.js:339:20     at async Span.traceAsyncFn (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\trace\trace.js:154:20)     at async DevServer.handleRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\dev\next-dev-server.js:336:24)     at async invokeRender (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:174:21)      at async handleRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:353:24)     at async requestHandlerImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:377:13)     at async Server.requestListener (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\start-server.js:141:13) {   errno: -4071,   code: 'EINVAL',   syscall: 'spawn' }  POST /api/migration/init 500 in 496ms]
+移行元 プロジェクトキー[DM_INT]
+移行先 URL[https://psoc.backlog.com]
+移行先 アクセスキー[c4Es67hf5ymyLdvgdarkxBre63CoWOY8fInBGwq3SaZa6aWGw959EiVErb5B2fwC]
+移行先 プロジェクトキー[YK_TEST]
+フィルター[]
+インポートのみ実行[false]
+課題キーを一致させる[false]
+エラー時の再試行回数[3]
+https.proxyHost[]
+https.proxyPort[]
+https.proxyUser[]
+https.proxyPassword[]
+--------------------------------------------------
+
+2025/11/21 00:20:12.679 3502 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:20:13.642 4465 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Received response with status: 200
+2025/11/21 00:20:13.642 4465 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Response data is [B@2150e5dc
+2025/11/21 00:20:13.642 4465 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+--------------------------------------------------
+最新バージョン[1.6.0]がリリースされています。現在のバージョンは[1.7.0]です。
+--------------------------------------------------
+       
+2025/11/21 00:20:13.672 4495 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元にアクセス可能かチェックしています...
+2025/11/21 00:20:14.079 4902 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:401 url:https://psclabo.backlog.jp/api/v2/space
+2025/11/21 00:20:14.361 5184 [scala-execution-context-global-26] ERROR c.n.b.b2b.cli.ParameterValidator - backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getSpace(BacklogClientImpl.java:36)
+	at com.nulabinc.backlog.migration.common.service.SpaceServiceImpl.space(SpaceServiceImpl.scala:20)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validateConfig(ParameterValidator.scala:88)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validate(ParameterValidator.scala:19)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.validateParam(BacklogMigrationCli.scala:147)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.migrate(BacklogMigrationCli.scala:78)
+	at com.nulabinc.backlog.b2b.Main$.$anonfun$execute$1(Main.scala:160)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 00:20:14.361 5184 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先にアクセス可能かチェックしています...
+2025/11/21 00:20:14.518 5341 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space
+2025/11/21 00:20:14.544 5367 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元のプロジェクトを取得しています...
+2025/11/21 00:20:14.681 5504 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:401 url:https://psclabo.backlog.jp/api/v2/projects/DM_INT
+2025/11/21 00:20:14.682 5505 [scala-execution-context-global-26] ERROR c.n.b.m.c.s.ProjectServiceImpl - backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getProject(BacklogClientImpl.java:94)
+	at com.nulabinc.backlog.migration.common.service.ProjectServiceImpl.optProject(ProjectServiceImpl.scala:33)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.optProject(ParameterValidator.scala:142)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validate(ParameterValidator.scala:22)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.validateParam(BacklogMigrationCli.scala:147)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.migrate(BacklogMigrationCli.scala:78)
+	at com.nulabinc.backlog.b2b.Main$.$anonfun$execute$1(Main.scala:160)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 00:20:14.682 5505 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先のプロジェクトを取得しています...
+2025/11/21 00:20:14.829 5652 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/projects/YK_TEST
+2025/11/21 00:20:14.845 5668 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 管理者権限の有無をチェックしています...
+2025/11/21 00:20:14.968 5791 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space/diskUsage
+2025/11/21 00:20:14.987 5810 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+
+パラメーターに次の誤りがあります。
+--------------------------------------------------
+- 移行元Backlogにアクセスできませんでした。URLまたはAPIアクセスキーを確認してください。
+
+       
+2025/11/21 00:20:14.987 5810 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 原因または対処方法が不明の場合は、ヘルプページをご覧ください: https://support-ja.backlog.com/hc/ja/articles/29471143249817
+2025/11/21 00:22:22.752 955  [main-pekko.actor.default-dispatcher-4] INFO  o.a.pekko.event.slf4j.Slf4jLogger - Slf4jLogger started
+2025/11/21 00:22:24.791 2994 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+Backlog Migration 1.7.0 (c) nulab.inc
+--------------------------------------------------
+2025/11/21 00:22:25.389 3592 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:22:25.533 3736 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - --------------------------------------------------
+移行元 URL[https://psclabo.backlog.jp]
+移行元 アクセスキー[modules)  ? Compiled in 86ms (327 modules)  ? Compiled in 88ms (327 modules)  ? Compiled in 84ms (327 modules)  ? Compiled in 100ms (327 modules)  ? Compiled in 126ms (327 modules)  ? Compiled in 88ms (327 modules)  GET / 200 in 271ms  ? Compiled /_not-found in 435ms (654 modules)  GET /.well-known/appspecific/com.chrome.devtools.json 404 in 731ms  ? Compiled /api/migration/init in 226ms (369 modules) Init API called Request body: {   srcUrl: 'https://psclabo.backlog.jp',   dstUrl: 'https://psoc.backlog.com',   projectKey: 'DM_INT:YK_TEST' } Paths: {   rootDir: 'Z:\\Users\\d-yokura\\backlog-migration-1.7.0',   binPath: 'Z:\\Users\\d-yokura\\backlog-migration-1.7.0\\bin\\backlog-migration.bat' } Binary file exists: true  ? Error: spawn EINVAL     at ChildProcess.spawn (node:internal/child_process:414:11)     at spawn (node:child_process:761:9)     at eval (webpack-internal:///(rsc)/./src/app/api/migration/init/route.ts:74:82)     at new Promise (<anonymous>)     at POST (webpack-internal:///(rsc)/./src/app/api/migration/init/route.ts:73:16)     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)     at async Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038     at async ek.execute (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)     at async ek.handle (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)     at async doRender (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1377:42)     at async cacheEntry.responseCache.get.routeKind (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1599:28)     at async DevServer.renderToResponseWithComponentsImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1507:28)     at async DevServer.renderPageComponent (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1931:24)     at async DevServer.renderToResponseImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:1969:32)     at async DevServer.pipeImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:920:25)      at async NextNodeServer.handleCatchallRenderRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\next-server.js:272:17)     at async DevServer.handleRequestImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\base-server.js:816:17)     at async Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\dev\next-dev-server.js:339:20     at async Span.traceAsyncFn (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\trace\trace.js:154:20)     at async DevServer.handleRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\dev\next-dev-server.js:336:24)     at async invokeRender (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:174:21)      at async handleRequest (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:353:24)     at async requestHandlerImpl (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\router-server.js:377:13)     at async Server.requestListener (Z:\Users\d-yokura\backlog-migration-1.7.0\frontend\backlog-migration-ui\node_modules\next\dist\server\lib\start-server.js:141:13) {   errno: -4071,   code: 'EINVAL',   syscall: 'spawn' }  POST /api/migration/init 500 in 496ms]
+移行元 プロジェクトキー[DM_INT]
+移行先 URL[https://psoc.backlog.com]
+移行先 アクセスキー[c4Es67hf5ymyLdvgdarkxBre63CoWOY8fInBGwq3SaZa6aWGw959EiVErb5B2fwC]
+移行先 プロジェクトキー[YK_TEST]
+フィルター[]
+インポートのみ実行[false]
+課題キーを一致させる[false]
+エラー時の再試行回数[3]
+https.proxyHost[]
+https.proxyPort[]
+https.proxyUser[]
+https.proxyPassword[]
+--------------------------------------------------
+
+2025/11/21 00:22:25.924 4127 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:22:27.084 5287 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Received response with status: 200
+2025/11/21 00:22:27.084 5287 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Response data is [B@16014b57
+2025/11/21 00:22:27.089 5292 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+--------------------------------------------------
+最新バージョン[1.6.0]がリリースされています。現在のバージョンは[1.7.0]です。
+--------------------------------------------------
+       
+2025/11/21 00:22:27.125 5328 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元にアクセス可能かチェックしています...
+2025/11/21 00:22:27.615 5818 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:401 url:https://psclabo.backlog.jp/api/v2/space
+2025/11/21 00:22:27.822 6025 [scala-execution-context-global-26] ERROR c.n.b.b2b.cli.ParameterValidator - backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getSpace(BacklogClientImpl.java:36)
+	at com.nulabinc.backlog.migration.common.service.SpaceServiceImpl.space(SpaceServiceImpl.scala:20)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validateConfig(ParameterValidator.scala:88)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validate(ParameterValidator.scala:19)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.validateParam(BacklogMigrationCli.scala:147)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.migrate(BacklogMigrationCli.scala:78)
+	at com.nulabinc.backlog.b2b.Main$.$anonfun$execute$1(Main.scala:160)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 00:22:27.824 6027 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先にアクセス可能かチェックしています...
+2025/11/21 00:22:28.035 6238 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space
+2025/11/21 00:22:28.051 6254 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元のプロジェクトを取得しています...
+2025/11/21 00:22:28.208 6411 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:401 url:https://psclabo.backlog.jp/api/v2/projects/DM_INT
+2025/11/21 00:22:28.208 6411 [scala-execution-context-global-26] ERROR c.n.b.m.c.s.ProjectServiceImpl - backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 401
+message - Authentication failure.
+code - 11
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getProject(BacklogClientImpl.java:94)
+	at com.nulabinc.backlog.migration.common.service.ProjectServiceImpl.optProject(ProjectServiceImpl.scala:33)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.optProject(ParameterValidator.scala:142)
+	at com.nulabinc.backlog.b2b.cli.ParameterValidator.validate(ParameterValidator.scala:22)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.validateParam(BacklogMigrationCli.scala:147)
+	at com.nulabinc.backlog.b2b.cli.BacklogMigrationCli.migrate(BacklogMigrationCli.scala:78)
+	at com.nulabinc.backlog.b2b.Main$.$anonfun$execute$1(Main.scala:160)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 00:22:28.208 6411 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先のプロジェクトを取得しています...
+2025/11/21 00:22:28.355 6558 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/projects/YK_TEST
+2025/11/21 00:22:28.371 6574 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 管理者権限の有無をチェックしています...
+2025/11/21 00:22:28.524 6727 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space/diskUsage
+2025/11/21 00:22:28.550 6753 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+
+パラメーターに次の誤りがあります。
+--------------------------------------------------
+- 移行元Backlogにアクセスできませんでした。URLまたはAPIアクセスキーを確認してください。
+
+       
+2025/11/21 00:22:28.552 6755 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 原因または対処方法が不明の場合は、ヘルプページをご覧ください: https://support-ja.backlog.com/hc/ja/articles/29471143249817
+2025/11/21 00:26:42.542 1562 [main-pekko.actor.default-dispatcher-4] INFO  o.a.pekko.event.slf4j.Slf4jLogger - Slf4jLogger started
+2025/11/21 00:26:45.947 4967 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+Backlog Migration 1.7.0 (c) nulab.inc
+--------------------------------------------------
+2025/11/21 00:26:47.171 6191 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:26:47.490 6510 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - --------------------------------------------------
+移行元 URL[https://psclabo.backlog.jp]
+移行元 アクセスキー[l9hcUDiwNRdkSIiSv9sE4Xsghghidc97cFzp95jLJub6T2RALRDku3J0cxmVayW0]
+移行元 プロジェクトキー[DM_INT]
+移行先 URL[https://psoc.backlog.com]
+移行先 アクセスキー[c4Es67hf5ymyLdvgdarkxBre63CoWOY8fInBGwq3SaZa6aWGw959EiVErb5B2fwC]
+移行先 プロジェクトキー[YK_TEST]
+フィルター[]
+インポートのみ実行[false]
+課題キーを一致させる[false]
+エラー時の再試行回数[3]
+https.proxyHost[]
+https.proxyPort[]
+https.proxyUser[]
+https.proxyPassword[]
+--------------------------------------------------
+
+2025/11/21 00:26:48.060 7080 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:26:49.026 8046 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Received response with status: 200
+2025/11/21 00:26:49.026 8046 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Response data is [B@51a038b9
+2025/11/21 00:26:49.030 8050 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+--------------------------------------------------
+最新バージョン[1.6.0]がリリースされています。現在のバージョンは[1.7.0]です。
+--------------------------------------------------
+       
+2025/11/21 00:26:49.040 8060 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元にアクセス可能かチェックしています...
+2025/11/21 00:26:49.412 8432 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/space
+2025/11/21 00:26:49.629 8649 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先にアクセス可能かチェックしています...
+2025/11/21 00:26:49.769 8789 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space
+2025/11/21 00:26:49.770 8790 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元のプロジェクトを取得しています...
+2025/11/21 00:26:49.934 8954 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/projects/DM_INT
+2025/11/21 00:26:49.959 8979 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先のプロジェクトを取得しています...
+2025/11/21 00:26:50.106 9126 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/projects/YK_TEST
+2025/11/21 00:26:50.108 9128 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 管理者権限の有無をチェックしています...
+2025/11/21 00:26:50.228 9248 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space/diskUsage
+2025/11/21 00:26:50.236 9256 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - プロジェクト管理者権限の有無をチェックしています...
+2025/11/21 00:26:50.405 9425 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/users
+2025/11/21 00:26:50.635 9655 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/projects/DM_INT/issueTypes
+2025/11/21 00:26:50.740 9760 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/projects/DM_INT
+2025/11/21 00:26:50.811 9831 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+プロジェクトに関連する情報を収集します。
+--------------------------------------------------
+2025/11/21 00:26:50.890 9910 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/projects/DM_INT
+2025/11/21 00:26:50.918 9938 [main-actor-system-pekko.actor.default-dispatcher-7] INFO  o.a.pekko.event.slf4j.Slf4jLogger - Slf4jLogger started
+2025/11/21 00:26:51.021 10041 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/issues/count
+2025/11/21 00:26:51.129 10149 [main-actor-system-pekko.actor.default-dispatcher-7] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis
+2025/11/21 00:26:51.779 10799 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/220488
+2025/11/21 00:26:51.790 10810 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:52.284 11304 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/220565
+2025/11/21 00:26:52.290 11310 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:52.401 11421 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/223752
+2025/11/21 00:26:52.407 11427 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:52.885 11905 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/223755
+2025/11/21 00:26:52.885 11905 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:53.003 12023 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/223761
+2025/11/21 00:26:53.004 12024 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:53.454 12474 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/223773
+2025/11/21 00:26:53.454 12474 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:53.569 12589 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/223796
+2025/11/21 00:26:53.569 12589 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:54.063 13083 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/252915
+2025/11/21 00:26:54.070 13090 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:54.175 13195 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/252931
+2025/11/21 00:26:54.179 13199 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:54.677 13697 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/266132
+2025/11/21 00:26:54.677 13697 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:54.764 13784 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/290878
+2025/11/21 00:26:54.766 13786 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:55.253 14273 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/357901
+2025/11/21 00:26:55.253 14273 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:55.379 14399 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/361414
+2025/11/21 00:26:55.381 14401 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:55.850 14870 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/362103
+2025/11/21 00:26:55.852 14872 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:55.974 14994 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/367152
+2025/11/21 00:26:55.975 14995 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:56.445 15465 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/386937
+2025/11/21 00:26:56.445 15465 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:56.555 15575 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/461719
+2025/11/21 00:26:56.555 15575 [main-actor-system-pekko.actor.default-dispatcher-8] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しています...
+2025/11/21 00:26:57.054 16074 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/wikis/490552
+2025/11/21 00:26:57.054 16074 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.b.m.common.utils.ProgressBar$ - Wikiを解析しました。
+2025/11/21 00:26:57.132 16152 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/users
+2025/11/21 00:26:57.321 16341 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/issues
+2025/11/21 00:26:57.357 16377 [main-actor-system-pekko.actor.default-dispatcher-9] INFO  c.n.b.m.common.utils.ProgressBar$ - 課題情報を収集しました。
+2025/11/21 00:26:57.357 16377 [main-actor-system-pekko.actor.default-dispatcher-7] DEBUG c.n.b.b.m.c.actor.IssueActor - [START ISSUE]7658199 thread numbers:49
+2025/11/21 00:26:57.952 16972 [main-actor-system-pekko.actor.default-dispatcher-7] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/issues/7658199
+2025/11/21 00:26:58.060 17080 [main-actor-system-pekko.actor.default-dispatcher-7] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/issues/7658199/comments/count
+2025/11/21 00:26:58.685 17705 [main-actor-system-pekko.actor.default-dispatcher-7] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/issues/7658199/comments
+2025/11/21 00:26:58.740 17760 [main-actor-system-pekko.actor.default-dispatcher-7] INFO  c.n.b.m.common.utils.ProgressBar$ - 課題を解析しました。
+2025/11/21 00:26:58.757 17777 [main-actor-system-pekko.actor.default-dispatcher-7] INFO  o.a.pekko.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2025/11/21 00:26:58.860 17880 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/projects/71451/users
+2025/11/21 00:26:58.860 17880 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - --------------------------------------------------
+プロジェクトに関連する情報の収集が完了しました。
+2025/11/21 00:26:59.048 18068 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/users
+2025/11/21 00:26:59.178 18198 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+--------------------------------------------------
+ユーザーのマッピングファイルを作成しました。
+[Z:\Users\d-yokura\backlog-migration-1.7.0\mapping\users.csv]
+--------------------------------------------------
+2025/11/21 00:27:10.513 1016 [main-pekko.actor.default-dispatcher-4] INFO  o.a.pekko.event.slf4j.Slf4jLogger - Slf4jLogger started
+2025/11/21 00:27:12.455 2958 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+Backlog Migration 1.7.0 (c) nulab.inc
+--------------------------------------------------
+2025/11/21 00:27:12.872 3375 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:27:12.955 3458 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - --------------------------------------------------
+移行元 URL[https://psclabo.backlog.jp]
+移行元 アクセスキー[l9hcUDiwNRdkSIiSv9sE4Xsghghidc97cFzp95jLJub6T2RALRDku3J0cxmVayW0]
+移行元 プロジェクトキー[DM_INT]
+移行先 URL[https://psoc.backlog.com]
+移行先 アクセスキー[c4Es67hf5ymyLdvgdarkxBre63CoWOY8fInBGwq3SaZa6aWGw959EiVErb5B2fwC]
+移行先 プロジェクトキー[YK_TEST]
+フィルター[]
+インポートのみ実行[true]
+課題キーを一致させる[false]
+エラー時の再試行回数[3]
+https.proxyHost[]
+https.proxyPort[]
+https.proxyUser[]
+https.proxyPassword[]
+--------------------------------------------------
+
+2025/11/21 00:27:13.237 3740 [main] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Execute request HttpRequest(HttpMethod(GET),https://backlog.com/ja/backlog-migration/latest.txt,List(User-Agent: backlog-migration, Accept-Charset: UTF-8),HttpEntity.Strict(none/none,0 bytes total),HttpProtocol(HTTP/1.1))
+2025/11/21 00:27:14.273 4776 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Received response with status: 200
+2025/11/21 00:27:14.273 4776 [scala-execution-context-global-26] INFO  c.n.b.m.c.interpreters.PekkoHttpDSL - Response data is [B@1f7581c5
+2025/11/21 00:27:14.273 4776 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+--------------------------------------------------
+最新バージョン[1.6.0]がリリースされています。現在のバージョンは[1.7.0]です。
+--------------------------------------------------
+       
+2025/11/21 00:27:14.281 4784 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元にアクセス可能かチェックしています...
+2025/11/21 00:27:14.624 5127 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/space
+2025/11/21 00:27:14.821 5324 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先にアクセス可能かチェックしています...
+2025/11/21 00:27:15.025 5528 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space
+2025/11/21 00:27:15.027 5530 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行元のプロジェクトを取得しています...
+2025/11/21 00:27:15.160 5663 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psclabo.backlog.jp/api/v2/projects/DM_INT
+2025/11/21 00:27:15.168 5671 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 移行先のプロジェクトを取得しています...
+2025/11/21 00:27:15.327 5830 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/projects/YK_TEST
+2025/11/21 00:27:15.329 5832 [scala-execution-context-global-26] INFO  c.n.b.m.common.utils.ConsoleOut$ - 管理者権限の有無をチェックしています...
+2025/11/21 00:27:15.459 5962 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/space/diskUsage
+2025/11/21 00:27:15.596 6099 [scala-execution-context-global-26] INFO  c.n.backlog4j.BacklogClientBase - status code:200 url:https://psoc.backlog.com/api/v2/projects/YK_TEST/issueTypes
+2025/11/21 00:27:15.695 6198 [scala-execution-context-global-26] INFO  c.n.b.m.c.i.JansiConsoleDSL - 
+インポートを開始します。
+--------------------------------------------------
+2025/11/21 00:27:15.710 6213 [main] INFO  c.n.b.m.c.i.JansiConsoleDSL - No such project file. (Z:\Users\d-yokura\backlog-migration-1.7.0\backlog\project.json)
+2025/11/21 00:27:15.713 6216 [main] ERROR com.nulabinc.backlog.b2b.Main$ - No such project file. (Z:\Users\d-yokura\backlog-migration-1.7.0\backlog\project.json)
+java.util.NoSuchElementException: No such project file. (Z:\Users\d-yokura\backlog-migration-1.7.0\backlog\project.json)
+	at com.nulabinc.backlog.migration.common.convert.BacklogUnmarshaller$.$anonfun$project$2(BacklogUnmarshaller.scala:50)
+	at scala.Option.getOrElse(Option.scala:201)
+	at com.nulabinc.backlog.migration.common.convert.BacklogUnmarshaller$.project(BacklogUnmarshaller.scala:49)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:53)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)

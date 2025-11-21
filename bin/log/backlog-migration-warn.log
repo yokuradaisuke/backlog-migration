@@ -1,0 +1,756 @@
+2025/11/21 00:30:31.494 6555 [scala-execution-context-global-29] WARN  c.n.b.m.c.service.GroupServiceImpl - backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getGroups(BacklogClientImpl.java:986)
+	at com.nulabinc.backlog.migration.common.service.GroupServiceImpl.allGroups(GroupServiceImpl.scala:27)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.importGroup(ProjectImporter.scala:151)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.preExecute(ProjectImporter.scala:117)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:57)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 00:31:36.992 7783 [scala-execution-context-global-26] WARN  c.n.b.m.c.service.GroupServiceImpl - backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getGroups(BacklogClientImpl.java:986)
+	at com.nulabinc.backlog.migration.common.service.GroupServiceImpl.allGroups(GroupServiceImpl.scala:27)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.importGroup(ProjectImporter.scala:151)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.preExecute(ProjectImporter.scala:117)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:57)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 08:51:05.935 9082 [scala-execution-context-global-26] WARN  c.n.b.m.c.service.GroupServiceImpl - backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getGroups(BacklogClientImpl.java:986)
+	at com.nulabinc.backlog.migration.common.service.GroupServiceImpl.allGroups(GroupServiceImpl.scala:27)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.importGroup(ProjectImporter.scala:151)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.preExecute(ProjectImporter.scala:117)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:57)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.execution.Callback.apply(Callback.scala:116)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1(TaskFromFuture.scala:112)
+	at monix.eval.internal.TaskFromFuture$.$anonfun$startSimple$1$adapted(TaskFromFuture.scala:111)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:448)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 09:42:59.100 22576 [scala-execution-context-global-26] WARN  c.n.b.m.c.service.GroupServiceImpl - backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getGroups(BacklogClientImpl.java:986)
+	at com.nulabinc.backlog.migration.common.service.GroupServiceImpl.allGroups(GroupServiceImpl.scala:27)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.importGroup(ProjectImporter.scala:151)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.preExecute(ProjectImporter.scala:117)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:57)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback$$anon$1.run(TaskRestartCallback.scala:118)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.super$startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.$anonfun$startLoop$1(TrampolineExecutionContext.scala:142)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:72)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:165)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 10:24:07.779 23359 [scala-execution-context-global-26] WARN  c.n.b.m.c.service.GroupServiceImpl - backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getGroups(BacklogClientImpl.java:986)
+	at com.nulabinc.backlog.migration.common.service.GroupServiceImpl.allGroups(GroupServiceImpl.scala:27)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.importGroup(ProjectImporter.scala:151)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.preExecute(ProjectImporter.scala:117)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:57)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback$$anon$1.run(TaskRestartCallback.scala:118)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.super$startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.$anonfun$startLoop$1(TrampolineExecutionContext.scala:142)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:72)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:165)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 13:14:19.948 28113 [scala-execution-context-global-26] WARN  c.n.b.m.c.service.GroupServiceImpl - backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getGroups(BacklogClientImpl.java:986)
+	at com.nulabinc.backlog.migration.common.service.GroupServiceImpl.allGroups(GroupServiceImpl.scala:27)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.importGroup(ProjectImporter.scala:151)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.preExecute(ProjectImporter.scala:117)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:57)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback$$anon$1.run(TaskRestartCallback.scala:118)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.super$startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.$anonfun$startLoop$1(TrampolineExecutionContext.scala:142)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:72)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:165)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 13:15:26.469 20801 [scala-execution-context-global-27] WARN  c.n.b.m.c.service.GroupServiceImpl - backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getGroups(BacklogClientImpl.java:986)
+	at com.nulabinc.backlog.migration.common.service.GroupServiceImpl.allGroups(GroupServiceImpl.scala:27)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.importGroup(ProjectImporter.scala:151)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.preExecute(ProjectImporter.scala:117)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:57)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback$$anon$1.run(TaskRestartCallback.scala:118)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.super$startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.$anonfun$startLoop$1(TrampolineExecutionContext.scala:142)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:72)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:165)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 13:17:48.958 21104 [scala-execution-context-global-26] WARN  c.n.b.m.c.service.GroupServiceImpl - backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getGroups(BacklogClientImpl.java:986)
+	at com.nulabinc.backlog.migration.common.service.GroupServiceImpl.allGroups(GroupServiceImpl.scala:27)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.importGroup(ProjectImporter.scala:151)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.preExecute(ProjectImporter.scala:117)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:57)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback$$anon$1.run(TaskRestartCallback.scala:118)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.super$startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.$anonfun$startLoop$1(TrampolineExecutionContext.scala:142)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:72)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:165)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 13:20:23.918 22147 [scala-execution-context-global-26] WARN  c.n.b.m.c.service.GroupServiceImpl - backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getGroups(BacklogClientImpl.java:986)
+	at com.nulabinc.backlog.migration.common.service.GroupServiceImpl.allGroups(GroupServiceImpl.scala:27)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.importGroup(ProjectImporter.scala:151)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.preExecute(ProjectImporter.scala:117)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:57)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback$$anon$1.run(TaskRestartCallback.scala:118)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.super$startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.$anonfun$startLoop$1(TrampolineExecutionContext.scala:142)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:72)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:165)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 13:28:26.227 23678 [scala-execution-context-global-26] WARN  c.n.b.m.c.service.GroupServiceImpl - backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getGroups(BacklogClientImpl.java:986)
+	at com.nulabinc.backlog.migration.common.service.GroupServiceImpl.allGroups(GroupServiceImpl.scala:27)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.importGroup(ProjectImporter.scala:151)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.preExecute(ProjectImporter.scala:117)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:57)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback$$anon$1.run(TaskRestartCallback.scala:118)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.super$startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.$anonfun$startLoop$1(TrampolineExecutionContext.scala:142)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:72)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:165)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 13:32:21.663 21076 [scala-execution-context-global-26] WARN  c.n.b.m.c.service.GroupServiceImpl - backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getGroups(BacklogClientImpl.java:986)
+	at com.nulabinc.backlog.migration.common.service.GroupServiceImpl.allGroups(GroupServiceImpl.scala:27)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.importGroup(ProjectImporter.scala:151)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.preExecute(ProjectImporter.scala:117)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:57)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback$$anon$1.run(TaskRestartCallback.scala:118)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.super$startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.$anonfun$startLoop$1(TrampolineExecutionContext.scala:142)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:72)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:165)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 15:52:46.756 22643 [scala-execution-context-global-26] WARN  c.n.b.m.c.service.GroupServiceImpl - backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getGroups(BacklogClientImpl.java:986)
+	at com.nulabinc.backlog.migration.common.service.GroupServiceImpl.allGroups(GroupServiceImpl.scala:27)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.importGroup(ProjectImporter.scala:151)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.preExecute(ProjectImporter.scala:117)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:57)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback$$anon$1.run(TaskRestartCallback.scala:118)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.super$startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.$anonfun$startLoop$1(TrampolineExecutionContext.scala:142)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:72)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:165)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 16:12:28.283 20146 [scala-execution-context-global-27] WARN  c.n.b.m.c.service.GroupServiceImpl - backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getGroups(BacklogClientImpl.java:986)
+	at com.nulabinc.backlog.migration.common.service.GroupServiceImpl.allGroups(GroupServiceImpl.scala:27)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.importGroup(ProjectImporter.scala:151)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.preExecute(ProjectImporter.scala:117)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:57)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback$$anon$1.run(TaskRestartCallback.scala:118)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.super$startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.$anonfun$startLoop$1(TrampolineExecutionContext.scala:142)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:72)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:165)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 16:20:21.324 20467 [scala-execution-context-global-26] WARN  c.n.b.m.c.service.GroupServiceImpl - backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getGroups(BacklogClientImpl.java:986)
+	at com.nulabinc.backlog.migration.common.service.GroupServiceImpl.allGroups(GroupServiceImpl.scala:27)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.importGroup(ProjectImporter.scala:151)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.preExecute(ProjectImporter.scala:117)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:57)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback$$anon$1.run(TaskRestartCallback.scala:118)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.super$startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.$anonfun$startLoop$1(TrampolineExecutionContext.scala:142)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:72)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:165)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025/11/21 16:21:48.440 21629 [scala-execution-context-global-26] WARN  c.n.b.m.c.service.GroupServiceImpl - backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+com.nulabinc.backlog4j.BacklogAPIException: backlog api request failed.
+status code - 400
+message - Undefined resource. /api/v2/groups
+code - 6
+
+	at com.nulabinc.backlog4j.BacklogClientBase.checkError(BacklogClientBase.java:200)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:87)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.super$get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.$anonfun$get$1(BacklogAPIClientImpl.scala:115)
+	at scala.util.control.Exception$Catch.$anonfun$either$1(Exception.scala:251)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:227)
+	at scala.util.control.Exception$Catch.either(Exception.scala:251)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retry0$1(BacklogAPIClientImpl.scala:155)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.retryRateLimit(BacklogAPIClientImpl.scala:176)
+	at com.nulabinc.backlog.migration.common.client.BacklogAPIClientImpl.get(BacklogAPIClientImpl.scala:115)
+	at com.nulabinc.backlog4j.BacklogClientBase.get(BacklogClientBase.java:69)
+	at com.nulabinc.backlog4j.BacklogClientImpl.getGroups(BacklogClientImpl.java:986)
+	at com.nulabinc.backlog.migration.common.service.GroupServiceImpl.allGroups(GroupServiceImpl.scala:27)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.importGroup(ProjectImporter.scala:151)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.preExecute(ProjectImporter.scala:117)
+	at com.nulabinc.backlog.migration.importer.service.ProjectImporter.execute(ProjectImporter.scala:57)
+	at com.nulabinc.backlog.migration.importer.core.Boot$.$anonfun$execute$2(Boot.scala:43)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback$$anon$1.run(TaskRestartCallback.scala:118)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.super$startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.$anonfun$startLoop$1(TrampolineExecutionContext.scala:142)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMNormalTrampoline.startLoop(TrampolineExecutionContext.scala:142)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:72)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:165)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)

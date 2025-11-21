@@ -1,0 +1,97 @@
+■■■　さくら会員サイト　ドメインメニューにてサブドメイン登録　■■■
+◎会員サイトにログイン
+https://secure.sakura.ad.jp/menu/top/
+\\sv-fs01\第四事業本部\テストサーバ（さくらVPS）
+接続情報.txt
+
+◎「ゾーン編集」をクリック。
+
+◎「変更ボタン」をクリック。
+
+◎ゾーン編集画面で、下記を入力し「新規登録」ボタンをクリック。
+------
+エントリ名：設定したいサブドメイン
+種別： IPアドレス (A)
+値：160.16.141.218
+※他はデフォルト値で
+-------
+
+◎「データ送信ボタン」をクリック
+
+
+■■■　サーバに接続してバーチャルホスト設定　■■■
+
+※　USERNAME　が　サブドメイン。
+
+
+rootで作業する
+
+■ユーザ作成
+# useradd USERNAME
+
+※PWは7桁が必要
+# passwd USERNAME
+Changing password for user USERNAME.
+New password: 50fe14x
+Retype new password: 50fe14x
+passwd: all authentication tokens updated successfully.
+
+
+■ホームディレクトリの設定
+作成したユーザで作業
+su - USERNAME
+
+public_htmlディレクトリを作成して、自分以外が編集できないよう(chmod)
+apacheが読み込めるようにホームディレクトリとコンテンツディレクトリに実行許可
+mkdir /home/USERNAME/public_html
+chmod 701 /home/USERNAME/public_html
+chmod +x /home/USERNAME
+
+ユーザディレクトリにテスト用index.htmlファイルを生成
+cd public_html
+vi /home/USERNAME/public_html/index.html
+文言を入れてEscボタン押下
+:wqで保存
+
+作業完了
+exit
+
+■ホームディレクトリを使用できるようuser.confファイルを編集
+vi /etc/httpd/conf.d/userdir.conf
+
+ #UserDir disabled       ←コメントアウト
+  UserDir enabled USERNAME  ←追記
+
+Escボタン
+:wqで保存
+
+
+■バーチャルホスト設定
+vi /etc/httpd/conf.d/virtual.conf
+追加の場合、適宜変更して追記
+
+<VirtualHost *:80>
+        DocumentRoot    /home/USERNAME/public_html
+        ServerAdmin     USERNAME@USERNAME.psc-inc.jp
+        ServerName      USERNAME.psc-inc.jp
+        ErrorLog        /var/log/httpd/USERNAME-error_log
+        CustomLog       /var/log/httpd/USERNAME-access_log common
+</VirtualHost>
+
+
+apache再起動
+systemctl reload httpd
+
+
+■作成したユーザディレクトリに対してrootユーザーで下記のコマンドを実行
+restorecon -R /home/USERNAME/public_html
+
+
+■■■　Basic認証の設定　■■■
+/home/USERNAME/
+に　.htpasswd をアップ
+
+/home/USERNAME/public_html/
+に　.htaccess をアップ
+
+※USERNAME　と　パスワードは変更（初期：review）

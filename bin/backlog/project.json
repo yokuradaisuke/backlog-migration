@@ -1,0 +1,19 @@
+{
+  "project": {
+    "isChartEnabled": true,
+    "isProjectLeaderCanEditProjectLeader": true,
+    "isSubtaskingEnabled": true,
+    "key": "DN_SSK",
+    "name": "DN_SSK",
+    "optId": 71451,
+    "textFormattingRule": "backlog",
+    "useDevAttributes": true,
+    "useFileSharing": true,
+    "useGit": true,
+    "useOriginalImageSizeAtWiki": false,
+    "useResolvedForChart": false,
+    "useSubversion": false,
+    "useWiki": true,
+    "useWikiTreeView": true
+  }
+}

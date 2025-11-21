@@ -1,0 +1,22 @@
+{
+  "attachments": [],
+  "name": "支払申請一覧",
+  "optContent": "|カテゴリー|申請内容|作業タイミング|対応者|備考|h\r\n|業者支払申請|Kintone利用料|毎月(1週目目途に申請)|未定|申請方法は「https://psclabo.backlog.jp/alias/wiki/290878」参照。|\r\n|発注申請|Backlog利用料|毎年9月(年1回)|未定|申請方法は「https://psclabo.backlog.jp/alias/wiki/357901」参照。|",
+  "optCreated": "2018-10-01T16:02:54+09:00",
+  "optCreatedUser": {
+    "name": "PSC木村",
+    "optMailAddress": "s******a@psc-inc.co.jp",
+    "optUserId": "s-kimura",
+    "roleType": 2
+  },
+  "optId": 362103,
+  "optUpdated": "2018-10-01T16:07:42+09:00",
+  "optUpdatedUser": {
+    "name": "PSC木村",
+    "optMailAddress": "s******a@psc-inc.co.jp",
+    "optUserId": "s-kimura",
+    "roleType": 2
+  },
+  "sharedFiles": [],
+  "tags": []
+}
